@@ -45,7 +45,7 @@ class RoleController extends Controller implements HasMiddleware
             }
         }
 
-        if($permission){
+        if($role){
             return redirect()->route('role.index')->with('success','role added!');
         }else{
             return redirect()->route('role.create')->with('error','role not added');
